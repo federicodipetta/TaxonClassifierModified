@@ -1,0 +1,1 @@
+FileName1,NumberOfNucleotides1,NumberOfWeakBonds1,IsPseudoknotted1,TimeToGenerateStructuralSequence1[ns],FileName2,NumberOfNucleotides2,NumberOfWeakBonds2,IsPseudoknotted2,TimeToGenerateStructuralSequence2[ns],MaxNumberOfNucleotides1-2,SERNADistance,TimeToCalculateSERNADistance[ns]

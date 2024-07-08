@@ -1,0 +1,135 @@
+DATI PER Molecules\Archaea\5S-Archaea-Phylum.csv E BenchMark-results\Archaea\5S-streqalign.csv
+Method: single
+Rand_score: 0.7292307692307692
+Homogeneity_score: 0.13643577947225077
+Completeness_score: 0.40970989546560743
+Method: complete
+Rand_score: 0.7292307692307692
+Homogeneity_score: 0.13643577947225077
+Completeness_score: 0.40970989546560743
+Method: average
+Rand_score: 0.7292307692307692
+Homogeneity_score: 0.13643577947225077
+Completeness_score: 0.40970989546560743
+-------------------------------------------------------
+
+DATI PER Molecules\Bacteria\5S-Bacteria-Phylum.csv E BenchMark-results\Bacteria\5S-streqalign.csv
+Method: single
+Rand_score: 0.5529175050301811
+Homogeneity_score: 0.18073456660159648
+Completeness_score: 0.4626212981445627
+Method: complete
+Rand_score: 0.7565392354124748
+Homogeneity_score: 0.4677257509112598
+Completeness_score: 0.5576702772761104
+Method: average
+Rand_score: 0.7408450704225352
+Homogeneity_score: 0.380527721013924
+Completeness_score: 0.5063469617606182
+-------------------------------------------------------
+
+DATI PER Molecules\Eukaryota\5S-Eukaryota-Phylum.csv E BenchMark-results\Eukaryota\5S-streqalign.csv
+Method: single
+Rand_score: 0.48564593301435405
+Homogeneity_score: 0.09277817447592267
+Completeness_score: 0.32269299110875166
+Method: complete
+Rand_score: 0.48564593301435405
+Homogeneity_score: 0.09277817447592267
+Completeness_score: 0.32269299110875166
+Method: average
+Rand_score: 0.48564593301435405
+Homogeneity_score: 0.09277817447592267
+Completeness_score: 0.32269299110875166
+-------------------------------------------------------
+
+DATI PER Molecules\Archaea\16S-Archaea-Phylum.csv E BenchMark-results\Archaea\16S-streqalign.csv
+Method: single
+Rand_score: 0.644927536231884
+Homogeneity_score: 0.4176649951046867
+Completeness_score: 0.33994337672235075
+Method: complete
+Rand_score: 0.644927536231884
+Homogeneity_score: 0.4176649951046867
+Completeness_score: 0.33994337672235075
+Method: average
+Rand_score: 0.644927536231884
+Homogeneity_score: 0.4176649951046867
+Completeness_score: 0.33994337672235075
+-------------------------------------------------------
+
+DATI PER Molecules\Bacteria\16S-Bacteria-Phylum.csv E BenchMark-results\Bacteria\16S-streqalign.csv
+Method: single
+Rand_score: 0.7217587939698492
+Homogeneity_score: 0.3847957986024557
+Completeness_score: 0.4320054524006238
+Method: complete
+Rand_score: 0.7760804020100502
+Homogeneity_score: 0.4860192129076754
+Completeness_score: 0.3714953996266575
+Method: average
+Rand_score: 0.7596482412060301
+Homogeneity_score: 0.42776681753575235
+Completeness_score: 0.3273274547264259
+-------------------------------------------------------
+
+DATI PER Molecules\Eukaryota\16S-Eukaryota-Phylum.csv E BenchMark-results\Eukaryota\16S-streqalign.csv
+Method: single
+Rand_score: 0.24503328213005632
+Homogeneity_score: 0.07475374531454029
+Completeness_score: 0.39977843349548925
+Method: complete
+Rand_score: 0.6757552483358935
+Homogeneity_score: 0.2710125564111569
+Completeness_score: 0.3297678468770787
+Method: average
+Rand_score: 0.6740143369175627
+Homogeneity_score: 0.25629067226058666
+Completeness_score: 0.3388537275641422
+-------------------------------------------------------
+
+DATI PER Molecules\Archaea\23S-Archaea-Phylum.csv E BenchMark-results\Archaea\23S-streqalign.csv
+Method: single
+Rand_score: 1.0
+Homogeneity_score: 1.0
+Completeness_score: 1.0
+Method: complete
+Rand_score: 1.0
+Homogeneity_score: 1.0
+Completeness_score: 1.0
+Method: average
+Rand_score: 1.0
+Homogeneity_score: 1.0
+Completeness_score: 1.0
+-------------------------------------------------------
+
+DATI PER Molecules\Bacteria\23S-Bacteria-Phylum.csv E BenchMark-results\Bacteria\23S-streqalign.csv
+Method: single
+Rand_score: 0.5548172757475083
+Homogeneity_score: 0.3778930666302723
+Completeness_score: 0.5291147993459352
+Method: complete
+Rand_score: 0.7009966777408638
+Homogeneity_score: 0.43717098574404795
+Completeness_score: 0.4056651608893047
+Method: average
+Rand_score: 0.6013289036544851
+Homogeneity_score: 0.4396681184355213
+Completeness_score: 0.5173569232897627
+-------------------------------------------------------
+
+DATI PER Molecules\Eukaryota\23S-Eukaryota-Phylum.csv E BenchMark-results\Eukaryota\23S-streqalign.csv
+Method: single
+Rand_score: 0.49047619047619045
+Homogeneity_score: 0.26242758128313903
+Completeness_score: 0.4985051402838513
+Method: complete
+Rand_score: 0.5333333333333333
+Homogeneity_score: 0.3058627092130707
+Completeness_score: 0.5038028964957941
+Method: average
+Rand_score: 0.5333333333333333
+Homogeneity_score: 0.30586270921307074
+Completeness_score: 0.5038028964957941
+-------------------------------------------------------
+

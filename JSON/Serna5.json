@@ -1,0 +1,175 @@
+{
+    "data": [
+        {
+            "title": "DATI PER Molecules\\Archaea\\5S-Archaea-Phylum.csv E BenchMark-results-Serna5\\Archaea\\5S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.7292307692307692,
+                "homogeneity_score": 0.13643577947225077,
+                "completeness_score": 0.40970989546560743
+            },
+            "average": {
+                "rand_score": 0.7292307692307692,
+                "homogeneity_score": 0.13643577947225077,
+                "completeness_score": 0.40970989546560743
+            },
+            "complete": {
+                "rand_score": 0.7292307692307692,
+                "homogeneity_score": 0.13643577947225077,
+                "completeness_score": 0.40970989546560743
+            },
+            "key": "5S-Archaea-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Bacteria\\5S-Bacteria-Phylum.csv E BenchMark-results-Serna5\\Bacteria\\5S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.6929577464788732,
+                "homogeneity_score": 0.3945552098345808,
+                "completeness_score": 0.6527015157533537
+            },
+            "average": {
+                "rand_score": 0.6929577464788732,
+                "homogeneity_score": 0.3945552098345808,
+                "completeness_score": 0.6527015157533537
+            },
+            "complete": {
+                "rand_score": 0.6929577464788732,
+                "homogeneity_score": 0.3945552098345808,
+                "completeness_score": 0.6527015157533537
+            },
+            "key": "5S-Bacteria-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Eukaryota\\5S-Eukaryota-Phylum.csv E BenchMark-results-Serna5\\Eukaryota\\5S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.48564593301435405,
+                "homogeneity_score": 0.09277817447592267,
+                "completeness_score": 0.32269299110875166
+            },
+            "average": {
+                "rand_score": 0.48564593301435405,
+                "homogeneity_score": 0.09277817447592267,
+                "completeness_score": 0.32269299110875166
+            },
+            "complete": {
+                "rand_score": 0.48564593301435405,
+                "homogeneity_score": 0.09277817447592267,
+                "completeness_score": 0.32269299110875166
+            },
+            "key": "5S-Eukaryota-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Archaea\\16S-Archaea-Phylum.csv E BenchMark-results-Serna5\\Archaea\\16S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.644927536231884,
+                "homogeneity_score": 0.4176649951046867,
+                "completeness_score": 0.33994337672235075
+            },
+            "average": {
+                "rand_score": 0.644927536231884,
+                "homogeneity_score": 0.4176649951046867,
+                "completeness_score": 0.33994337672235075
+            },
+            "complete": {
+                "rand_score": 0.644927536231884,
+                "homogeneity_score": 0.4176649951046867,
+                "completeness_score": 0.33994337672235075
+            },
+            "key": "16S-Archaea-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Bacteria\\16S-Bacteria-Phylum.csv E BenchMark-results-Serna5\\Bacteria\\16S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.7327638190954774,
+                "homogeneity_score": 0.41592672278202514,
+                "completeness_score": 0.4650394816142956
+            },
+            "average": {
+                "rand_score": 0.7608040201005025,
+                "homogeneity_score": 0.43279365371692496,
+                "completeness_score": 0.33077858484590617
+            },
+            "complete": {
+                "rand_score": 0.7642211055276382,
+                "homogeneity_score": 0.4439413417839071,
+                "completeness_score": 0.35124884395125966
+            },
+            "key": "16S-Bacteria-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Eukaryota\\16S-Eukaryota-Phylum.csv E BenchMark-results-Serna5\\Eukaryota\\16S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.24503328213005632,
+                "homogeneity_score": 0.07475374531454029,
+                "completeness_score": 0.39977843349548925
+            },
+            "average": {
+                "rand_score": 0.6532258064516129,
+                "homogeneity_score": 0.24611147849825388,
+                "completeness_score": 0.35016770258422364
+            },
+            "complete": {
+                "rand_score": 0.691884280593958,
+                "homogeneity_score": 0.260178069423876,
+                "completeness_score": 0.3067957040331777
+            },
+            "key": "16S-Eukaryota-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Archaea\\23S-Archaea-Phylum.csv E BenchMark-results-Serna5\\Archaea\\23S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 1.0,
+                "homogeneity_score": 1.0,
+                "completeness_score": 1.0
+            },
+            "average": {
+                "rand_score": 1.0,
+                "homogeneity_score": 1.0,
+                "completeness_score": 1.0
+            },
+            "complete": {
+                "rand_score": 1.0,
+                "homogeneity_score": 1.0,
+                "completeness_score": 1.0
+            },
+            "key": "23S-Archaea-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Bacteria\\23S-Bacteria-Phylum.csv E BenchMark-results-Serna5\\Bacteria\\23S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.5548172757475083,
+                "homogeneity_score": 0.3778930666302723,
+                "completeness_score": 0.5291147993459352
+            },
+            "average": {
+                "rand_score": 0.6677740863787376,
+                "homogeneity_score": 0.5121113592241473,
+                "completeness_score": 0.49143046317516254
+            },
+            "complete": {
+                "rand_score": 0.7009966777408638,
+                "homogeneity_score": 0.43717098574404795,
+                "completeness_score": 0.4056651608893047
+            },
+            "key": "23S-Bacteria-Phylum"
+        },
+        {
+            "title": "DATI PER Molecules\\Eukaryota\\23S-Eukaryota-Phylum.csv E BenchMark-results-Serna5\\Eukaryota\\23S-SernaAlign4.csv",
+            "single": {
+                "rand_score": 0.49047619047619045,
+                "homogeneity_score": 0.26242758128313903,
+                "completeness_score": 0.4985051402838513
+            },
+            "average": {
+                "rand_score": 0.5333333333333333,
+                "homogeneity_score": 0.30586270921307074,
+                "completeness_score": 0.5038028964957941
+            },
+            "complete": {
+                "rand_score": 0.5333333333333333,
+                "homogeneity_score": 0.3058627092130707,
+                "completeness_score": 0.5038028964957941
+            },
+            "key": "23S-Eukaryota-Phylum"
+        }
+    ]
+}

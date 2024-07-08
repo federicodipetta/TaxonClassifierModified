@@ -1,0 +1,14 @@
+{
+    "automaticClasterMatrix": {
+        "dir1": "Molecules",
+        "dir2": "BenchMark-results-NoConstrains"
+    },
+    "jsonComparator": {
+        "json1": "JsonResults/ASPRA.json",
+        "json2": "JsonResults/Heuristic.json",
+        "output": "JsonComparisonResults/JsonComparisonResultsh3.json"
+    },
+    "diagramGeneratoForComparison": {
+        "input": "JsonComparisonResults/JsonComparisonResultsh3.json"
+    }
+}

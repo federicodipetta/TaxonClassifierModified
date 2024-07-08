@@ -1,0 +1,7 @@
+FileName1,NumberOfNucleotides1,NumberOfWeakBonds1,IsPseudoknotted1,TimeToGenerateStructuralSequence1[ns],FileName2,NumberOfNucleotides2,NumberOfWeakBonds2,IsPseudoknotted2,TimeToGenerateStructuralSequence2[ns],MaxNumberOfNucleotides1-2,SERNADistance,TimeToCalculateSERNADistance[ns]
+"CRW_23S_A_E_1.ct",2925,852,Yes,1244200,"CRW_23S_A_E_2.ct",2930,855,Yes,1246000,2930,356,14703700
+"CRW_23S_A_E_1.ct",2925,852,Yes,1244200,"CRW_23S_A_E_3.ct",2930,855,Yes,1162000,2930,356,14740100
+"CRW_23S_A_E_1.ct",2925,852,Yes,1244200,"CRW_23S_A_E_6.ct",3029,879,No,1358200,3029,829,17882700
+"CRW_23S_A_E_2.ct",2930,855,Yes,1246000,"CRW_23S_A_E_3.ct",2930,855,Yes,1162000,2930,0,16369200
+"CRW_23S_A_E_2.ct",2930,855,Yes,1246000,"CRW_23S_A_E_6.ct",3029,879,No,1358200,3029,803,14146600
+"CRW_23S_A_E_3.ct",2930,855,Yes,1162000,"CRW_23S_A_E_6.ct",3029,879,No,1358200,3029,803,14709200
