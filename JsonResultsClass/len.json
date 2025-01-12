@@ -1,0 +1,175 @@
+{
+    "data": [
+        {
+            "title": "DATI PER Class\\Archaea\\5S-Archaea-Class.csv E Benchmark-results-len\\Archaea\\5S-distance.csv",
+            "single": {
+                "rand_score": 0.6369230769230769,
+                "homogeneity_score": 0.37945699138148753,
+                "completeness_score": 0.3613690138523479
+            },
+            "average": {
+                "rand_score": 0.7292307692307692,
+                "homogeneity_score": 0.46834947293462664,
+                "completeness_score": 0.40320411289721086
+            },
+            "complete": {
+                "rand_score": 0.7292307692307692,
+                "homogeneity_score": 0.46834947293462664,
+                "completeness_score": 0.40320411289721086
+            },
+            "key": "5S-Archaea-Class"
+        },
+        {
+            "title": "DATI PER Class\\Bacteria\\5S-Bacteria-Class.csv E Benchmark-results-len\\Bacteria\\5S-distance.csv",
+            "single": {
+                "rand_score": 0.7372233400402415,
+                "homogeneity_score": 0.5027875851019026,
+                "completeness_score": 0.5027881210011148
+            },
+            "average": {
+                "rand_score": 0.7372233400402415,
+                "homogeneity_score": 0.5027875851019026,
+                "completeness_score": 0.5027881210011148
+            },
+            "complete": {
+                "rand_score": 0.7372233400402415,
+                "homogeneity_score": 0.5027875851019026,
+                "completeness_score": 0.5027881210011148
+            },
+            "key": "5S-Bacteria-Class"
+        },
+        {
+            "title": "DATI PER Class\\Eukaryota\\5S-Eukaryota-Class.csv E Benchmark-results-len\\Eukaryota\\5S-distance.csv",
+            "single": {
+                "rand_score": 0.5105946684894054,
+                "homogeneity_score": 0.28570114556265785,
+                "completeness_score": 0.5152917079543946
+            },
+            "average": {
+                "rand_score": 0.583732057416268,
+                "homogeneity_score": 0.270598972822963,
+                "completeness_score": 0.4031791516880328
+            },
+            "complete": {
+                "rand_score": 0.583732057416268,
+                "homogeneity_score": 0.270598972822963,
+                "completeness_score": 0.4031791516880328
+            },
+            "key": "5S-Eukaryota-Class"
+        },
+        {
+            "title": "DATI PER Class\\Archaea\\16S-Archaea-Class.csv E Benchmark-results-len\\Archaea\\16S-distance.csv",
+            "single": {
+                "rand_score": 0.7971014492753623,
+                "homogeneity_score": 0.6099146995248222,
+                "completeness_score": 0.6694422033877407
+            },
+            "average": {
+                "rand_score": 0.8115942028985508,
+                "homogeneity_score": 0.610597197484254,
+                "completeness_score": 0.6465570656637127
+            },
+            "complete": {
+                "rand_score": 0.8115942028985508,
+                "homogeneity_score": 0.5999134336401325,
+                "completeness_score": 0.6130119841854395
+            },
+            "key": "16S-Archaea-Class"
+        },
+        {
+            "title": "DATI PER Class\\Bacteria\\16S-Bacteria-Class.csv E Benchmark-results-len\\Bacteria\\16S-distance.csv",
+            "single": {
+                "rand_score": 0.712964824120603,
+                "homogeneity_score": 0.45591185344517293,
+                "completeness_score": 0.6640963841616849
+            },
+            "average": {
+                "rand_score": 0.8879899497487437,
+                "homogeneity_score": 0.6396325847536941,
+                "completeness_score": 0.5420661691705245
+            },
+            "complete": {
+                "rand_score": 0.8895477386934674,
+                "homogeneity_score": 0.6581918183840381,
+                "completeness_score": 0.5477892241040291
+            },
+            "key": "16S-Bacteria-Class"
+        },
+        {
+            "title": "DATI PER Class\\Eukaryota\\16S-Eukaryota-Class.csv E Benchmark-results-len\\Eukaryota\\16S-distance.csv",
+            "single": {
+                "rand_score": 0.7892985151049667,
+                "homogeneity_score": 0.4805102043639111,
+                "completeness_score": 0.5676734319449455
+            },
+            "average": {
+                "rand_score": 0.8788530465949821,
+                "homogeneity_score": 0.5936381357095779,
+                "completeness_score": 0.5756179047120461
+            },
+            "complete": {
+                "rand_score": 0.8818228366615464,
+                "homogeneity_score": 0.5999272991518352,
+                "completeness_score": 0.5496044618376104
+            },
+            "key": "16S-Eukaryota-Class"
+        },
+        {
+            "title": "DATI PER Class\\Archaea\\23S-Archaea-Class.csv E Benchmark-results-len\\Archaea\\23S-distance.csv",
+            "single": {
+                "rand_score": 1.0,
+                "homogeneity_score": 1.0,
+                "completeness_score": 1.0
+            },
+            "average": {
+                "rand_score": 1.0,
+                "homogeneity_score": 1.0,
+                "completeness_score": 1.0
+            },
+            "complete": {
+                "rand_score": 1.0,
+                "homogeneity_score": 1.0,
+                "completeness_score": 1.0
+            },
+            "key": "23S-Archaea-Class"
+        },
+        {
+            "title": "DATI PER Class\\Bacteria\\23S-Bacteria-Class.csv E Benchmark-results-len\\Bacteria\\23S-distance.csv",
+            "single": {
+                "rand_score": 0.7641196013289037,
+                "homogeneity_score": 0.5534827654967335,
+                "completeness_score": 0.6829056314993146
+            },
+            "average": {
+                "rand_score": 0.8549280177187154,
+                "homogeneity_score": 0.6496698553330155,
+                "completeness_score": 0.6752204616001307
+            },
+            "complete": {
+                "rand_score": 0.8737541528239202,
+                "homogeneity_score": 0.6760041586588763,
+                "completeness_score": 0.6930656504455402
+            },
+            "key": "23S-Bacteria-Class"
+        },
+        {
+            "title": "DATI PER Class\\Eukaryota\\23S-Eukaryota-Class.csv E Benchmark-results-len\\Eukaryota\\23S-distance.csv",
+            "single": {
+                "rand_score": 0.8333333333333334,
+                "homogeneity_score": 0.6441569770105586,
+                "completeness_score": 0.6496951260393201
+            },
+            "average": {
+                "rand_score": 0.8333333333333334,
+                "homogeneity_score": 0.6441569770105586,
+                "completeness_score": 0.6496951260393201
+            },
+            "complete": {
+                "rand_score": 0.8428571428571429,
+                "homogeneity_score": 0.6789337734903631,
+                "completeness_score": 0.6847709165353687
+            },
+            "key": "23S-Eukaryota-Class"
+        }
+    ]
+}

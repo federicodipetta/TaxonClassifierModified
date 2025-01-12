@@ -1,0 +1,186 @@
+{
+    "firsrJson": "Serna1.json",
+    "secondJson": "output.json",
+    "data": [
+        {
+            "key": "5S-Archaea-Order",
+            "value": {
+                "single": {
+                    "rand_score": 0.03692307692307695,
+                    "homogeneity_score": 0.18650322835739575,
+                    "completeness_score": 0.1979559788357872
+                },
+                "average": {
+                    "rand_score": 0.006153846153846065,
+                    "homogeneity_score": 0.08171867371594976,
+                    "completeness_score": 0.11712498309729391
+                },
+                "complete": {
+                    "rand_score": -0.006153846153846176,
+                    "homogeneity_score": 0.024801274437270093,
+                    "completeness_score": 0.06859469122981332
+                }
+            }
+        },
+        {
+            "key": "5S-Bacteria-Order",
+            "value": {
+                "single": {
+                    "rand_score": -0.23259557344064385,
+                    "homogeneity_score": -0.08457485062517356,
+                    "completeness_score": 0.25580948402211495
+                },
+                "average": {
+                    "rand_score": -0.2233400402414487,
+                    "homogeneity_score": -0.1568601758435666,
+                    "completeness_score": 0.11153634280180003
+                },
+                "complete": {
+                    "rand_score": -0.22736418511066403,
+                    "homogeneity_score": -0.1736186615538824,
+                    "completeness_score": 0.10048000470134999
+                }
+            }
+        },
+        {
+            "key": "5S-Eukaryota-Order",
+            "value": {
+                "single": {
+                    "rand_score": -0.3349282296650718,
+                    "homogeneity_score": -0.23190201531986226,
+                    "completeness_score": 0.019584047917105774
+                },
+                "average": {
+                    "rand_score": -0.3653451811346548,
+                    "homogeneity_score": -0.35952327678581336,
+                    "completeness_score": -0.01635520286918324
+                },
+                "complete": {
+                    "rand_score": -0.365686944634313,
+                    "homogeneity_score": -0.3657410618794524,
+                    "completeness_score": -0.021892490120318242
+                }
+            }
+        },
+        {
+            "key": "16S-Archaea-Order",
+            "value": {
+                "single": {
+                    "rand_score": 0.0036231884057970065,
+                    "homogeneity_score": 0.006469529986323996,
+                    "completeness_score": 0.038863465584666024
+                },
+                "average": {
+                    "rand_score": -0.01449275362318847,
+                    "homogeneity_score": -0.01992459533746338,
+                    "completeness_score": 0.04182783794938816
+                },
+                "complete": {
+                    "rand_score": -0.01449275362318847,
+                    "homogeneity_score": -0.01992459533746349,
+                    "completeness_score": 0.04182783794938805
+                }
+            }
+        },
+        {
+            "key": "16S-Bacteria-Order",
+            "value": {
+                "single": {
+                    "rand_score": 0.035929648241206036,
+                    "homogeneity_score": 0.18827014701601175,
+                    "completeness_score": 0.19378986529652875
+                },
+                "average": {
+                    "rand_score": 0.013266331658291497,
+                    "homogeneity_score": 0.10495687735402626,
+                    "completeness_score": 0.17041872697171068
+                },
+                "complete": {
+                    "rand_score": 0.014974874371859292,
+                    "homogeneity_score": 0.11389541636063238,
+                    "completeness_score": 0.170445191771458
+                }
+            }
+        },
+        {
+            "key": "16S-Eukaryota-Order",
+            "value": {
+                "single": {
+                    "rand_score": -0.2702239789196311,
+                    "homogeneity_score": -0.03670729143630158,
+                    "completeness_score": 0.22026210636689048
+                },
+                "average": {
+                    "rand_score": 0.006271409749670553,
+                    "homogeneity_score": 0.14565655269348676,
+                    "completeness_score": 0.20256261943328302
+                },
+                "complete": {
+                    "rand_score": 0.008748353096179162,
+                    "homogeneity_score": 0.15652364449141853,
+                    "completeness_score": 0.16363135147009333
+                }
+            }
+        },
+        {
+            "key": "23S-Archaea-Order",
+            "value": {
+                "single": {
+                    "rand_score": 0.0,
+                    "homogeneity_score": 0.0,
+                    "completeness_score": 0.0
+                },
+                "average": {
+                    "rand_score": 0.5,
+                    "homogeneity_score": 0.6163114534036557,
+                    "completeness_score": 0.6887218755408672
+                },
+                "complete": {
+                    "rand_score": 0.5,
+                    "homogeneity_score": 0.6163114534036557,
+                    "completeness_score": 0.6887218755408672
+                }
+            }
+        },
+        {
+            "key": "23S-Bacteria-Order",
+            "value": {
+                "single": {
+                    "rand_score": -0.08859357696567005,
+                    "homogeneity_score": -0.033796376879090095,
+                    "completeness_score": 0.10488547056973097
+                },
+                "average": {
+                    "rand_score": -0.008859357696566983,
+                    "homogeneity_score": 0.013876592266192644,
+                    "completeness_score": 0.06588953022375788
+                },
+                "complete": {
+                    "rand_score": 0.011074197120708784,
+                    "homogeneity_score": 0.050961204067052956,
+                    "completeness_score": 0.08068984752710573
+                }
+            }
+        },
+        {
+            "key": "23S-Eukaryota-Order",
+            "value": {
+                "single": {
+                    "rand_score": -0.1105263157894737,
+                    "homogeneity_score": -0.1671121341790539,
+                    "completeness_score": -0.09487372546157902
+                },
+                "average": {
+                    "rand_score": -0.05789473684210533,
+                    "homogeneity_score": -0.06658450812959205,
+                    "completeness_score": 0.04666672983022335
+                },
+                "complete": {
+                    "rand_score": -0.05789473684210533,
+                    "homogeneity_score": -0.06658450812959205,
+                    "completeness_score": 0.04666672983022335
+                }
+            }
+        }
+    ]
+}

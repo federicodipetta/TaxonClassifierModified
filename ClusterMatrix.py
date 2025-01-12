@@ -35,6 +35,7 @@ import argparse
 
 # Read the list of molecules
 def calculate_ClusterMatrix(file_moleculus, file_benchMarck):
+    np.random.seed(42)
     result = "DATI PER "+ file_moleculus + " E " + file_benchMarck + "\n"
     molecules = pd.read_csv(file_moleculus, sep=";", encoding='latin-1')
 
@@ -157,12 +158,16 @@ def calculate_ClusterMatrix_json(file_moleculus, file_benchMarck):
     distance_matrix= np.zeros(s)
     # Populate Distance Matrix
     for k in range(len(distances)) :
+        if distances.loc[k].loc['FileName1'].replace(".ct","") not in index_of:
+            continue
+        if distances.loc[k].loc['FileName2'].replace(".ct","") not in index_of:
+            continue
         i = index_of[distances.loc[k].loc['FileName1'].replace(".ct","")]
         j = index_of[distances.loc[k].loc['FileName2'].replace(".ct","")]
         value = distances.loc[k].loc['SERNADistance']
         distance_matrix[i][j] = value
         distance_matrix[j][i] = value
-
+        
     # Determine the number of clusters as distinct labels in molecules
     n_clusters = len(set(label_of.values()))
 
@@ -195,4 +200,65 @@ def calculate_ClusterMatrix_json(file_moleculus, file_benchMarck):
         "completeness_score": metrics.completeness_score(labels_true, labels_pred)
     }
     return json
+    #return generate_clustering_results(labels_true, n_clusters, "DATI PER "+ file_moleculus + " E " + file_benchMarck)
+
+
+
+#this part is for testing what happen with a random matrix
+def generate_random_clusters(n_elements, n_clusters):
+    # Genera assegnazioni casuali di cluster per ciascun elemento
+    return np.random.randint(0, n_clusters, size=(n_elements, n_elements))
+
+def perturb_distance_matrix(distance_matrix, noise_level=0.01):
+    noise = np.random.normal(0, noise_level, distance_matrix.shape)
+    perturbed_matrix = distance_matrix + noise
+    np.fill_diagonal(perturbed_matrix, 0)  # Mantieni le diagonali a zero
+    return np.abs(perturbed_matrix)  # Evita distanze negative
+
+def clustering_with_linkage(distance_matrix, n_clusters, linkage):
+    """Esegue il clustering gerarchico con un determinato tipo di linkage."""
+    model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage=linkage)
+    labels_pred = model.fit_predict(distance_matrix)
+    return labels_pred
+
+def optimize_clustering(labels_true, n_clusters, n_iterations=100000000, noise_level=0.3):
+    distance_matrix = generate_random_clusters(len(labels_true), n_clusters)
     
+    """Esegue clustering con perturbazioni casuali e seleziona il miglior risultato."""
+    best_results = {
+        "single": {"rand_score": 0},
+        "average": {"rand_score": 0},
+        "complete": {"rand_score": 0}
+    }
+
+    for i in range(n_iterations):
+        perturbed_matrix = perturb_distance_matrix(distance_matrix, noise_level)
+        for linkage in ['single', 'average', 'complete']:
+            labels_pred = clustering_with_linkage(perturbed_matrix, n_clusters, linkage)
+
+            rand = metrics.rand_score(labels_true, labels_pred)
+            homogeneity = metrics.homogeneity_score(labels_true, labels_pred)
+            completeness = metrics.completeness_score(labels_true, labels_pred)
+
+            result = {
+                "rand_score": rand,
+                "homogeneity_score": homogeneity,
+                "completeness_score": completeness
+            }
+
+            # Aggiorna il miglior risultato se il rand_score è migliore
+            if rand > best_results[linkage]["rand_score"]:
+                best_results[linkage] = result
+
+    return best_results
+
+def generate_clustering_results(labels_true, n_clusters, title, n_iterations=10000, noise_level=0.1):
+    """Genera i risultati del clustering con ottimizzazione casuale."""
+    results = optimize_clustering(labels_true, n_clusters, n_iterations, noise_level)
+    result_json = {
+        "title": title,
+        "single": results["single"],
+        "average": results["average"],
+        "complete": results["complete"]
+    }
+    return result_json

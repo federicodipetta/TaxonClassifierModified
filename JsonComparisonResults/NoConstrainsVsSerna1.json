@@ -1,0 +1,66 @@
+{
+    "firsrJson": "NoConstraints.json",
+    "secondJson": "Serna1.json",
+    "data": [
+        {
+            "key": "16S-Archaea-Phylum",
+            "value": {
+                "single": {
+                    "rand_score": 0.0,
+                    "homogeneity_score": 0.0,
+                    "completeness_score": 0.0
+                },
+                "average": {
+                    "rand_score": 0.0,
+                    "homogeneity_score": 0.0,
+                    "completeness_score": 0.0
+                },
+                "complete": {
+                    "rand_score": -0.05797101449275355,
+                    "homogeneity_score": -0.24900170495329133,
+                    "completeness_score": -0.19813854830805888
+                }
+            }
+        },
+        {
+            "key": "16S-Bacteria-Phylum",
+            "value": {
+                "single": {
+                    "rand_score": 0.0005025125628140836,
+                    "homogeneity_score": -0.0027347104818309376,
+                    "completeness_score": -0.00891594376388366
+                },
+                "average": {
+                    "rand_score": 0.0037688442211055717,
+                    "homogeneity_score": -0.002841895955796425,
+                    "completeness_score": -0.018714570007362652
+                },
+                "complete": {
+                    "rand_score": -0.04467336683417078,
+                    "homogeneity_score": -0.08331123316596073,
+                    "completeness_score": -0.03890816456334739
+                }
+            }
+        },
+        {
+            "key": "16S-Eukaryota-Phylum",
+            "value": {
+                "single": {
+                    "rand_score": -0.3480286738351254,
+                    "homogeneity_score": -0.13157685214840548,
+                    "completeness_score": 0.0012329624150808627
+                },
+                "average": {
+                    "rand_score": -0.1333333333333333,
+                    "homogeneity_score": -0.16854673899166378,
+                    "completeness_score": -0.06819576477155953
+                },
+                "complete": {
+                    "rand_score": 0.012621607782898114,
+                    "homogeneity_score": -0.02735287157380467,
+                    "completeness_score": -0.03172411174201012
+                }
+            }
+        }
+    ]
+}

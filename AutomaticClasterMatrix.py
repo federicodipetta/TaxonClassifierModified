@@ -35,7 +35,7 @@ dir2 = settings["dir2"]
 
 # Pattern dei file
 patterns = ['*5S*', '*16S*', '*23S*']
-patterns2 = ['*5S-Sern*', '*16S-Sern*', '*23S-Sern*']
+patterns2 = ['*5S-*', '*16S-*', '*23S-*']
 files_dir1 = []
 for pattern in patterns:
     files_dir1.append(find_files(pattern, dir1))

@@ -26,9 +26,9 @@ def getWinningScore(out):
     for info in out["data"] : 
         for key in info["value"] : 
             for score in info["value"][key] : 
-                if info["value"][key][score] > 0.05: 
+                if info["value"][key][score] > 0.00: 
                     result[0] += 1
-                elif info["value"][key][score] < -0.05 : 
+                elif info["value"][key][score] < -0.00 : 
                     result[1] += 1
                 else : 
                     result[2] += 1

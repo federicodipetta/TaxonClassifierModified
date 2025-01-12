@@ -7,7 +7,7 @@ import json as json
 import matplotlib.pyplot as plt
 import numpy as np
 import AutomaticClasterMatrix as acm
-dir = 'JsonResults'
+dir = 'JsonResultsOrder'
 patterns = ['*.json']
 files = []
 
@@ -54,7 +54,7 @@ for x in data:
 fig = go.Figure()
 
 for i in range(len(sources)):
-    fig.add_trace(go.Bar(name=files[i].replace("JsonResults\\",""), x=groups, y=sources[i]))
+    fig.add_trace(go.Bar(name=files[i].replace(f"{dir}\\",""), x=groups, y=sources[i]))
 
 fig.update_layout(barmode='group')
 

@@ -1,0 +1,73 @@
+{
+    "data": {
+        "Archaea": {
+            "5S": {
+                "allRows": 325,
+                "WithOne": 0,
+                "withMoreThanOne": 325,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            },
+            "16S": {
+                "allRows": 276,
+                "WithOne": 0,
+                "withMoreThanOne": 276,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            },
+            "23S": {
+                "allRows": 6,
+                "WithOne": 0,
+                "withMoreThanOne": 6,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            }
+        },
+        "Bacteria": {
+            "5S": {
+                "allRows": 2485,
+                "WithOne": 0,
+                "withMoreThanOne": 2485,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            },
+            "16S": {
+                "allRows": 19900,
+                "WithOne": 0,
+                "withMoreThanOne": 19900,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            },
+            "23S": {
+                "allRows": 903,
+                "WithOne": 0,
+                "withMoreThanOne": 903,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            }
+        },
+        "Eukaryota": {
+            "5S": {
+                "allRows": 2926,
+                "WithOne": 0,
+                "withMoreThanOne": 2926,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            },
+            "16S": {
+                "allRows": 39060,
+                "WithOne": 0,
+                "withMoreThanOne": 39060,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            },
+            "23S": {
+                "allRows": 210,
+                "WithOne": 0,
+                "withMoreThanOne": 210,
+                "percentageWithOne": 0.0,
+                "percentageWithMoreThanOne": 1.0
+            }
+        }
+    }
+}

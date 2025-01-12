@@ -1,14 +1,22 @@
 {
     "automaticClasterMatrix": {
-        "dir1": "Molecules",
-        "dir2": "BenchMark-results-NoConstrains"
+        "dir1": "Order",
+        "dir2": "Benchmark-results-gc"
     },
     "jsonComparator": {
-        "json1": "JsonResults/ASPRA.json",
-        "json2": "JsonResults/Heuristic.json",
-        "output": "JsonComparisonResults/JsonComparisonResultsh3.json"
+        "json1": "JsonResultsClass/Serna1.json",
+        "json2": "output.json",
+        "output": "JsonComparisonResults/Serna-NC-class.json"
     },
     "diagramGeneratoForComparison": {
-        "input": "JsonComparisonResults/JsonComparisonResultsh3.json"
+        "input": "JsonComparisonResults/ASPRAVsSerna1.json"
+    },
+    "numberOfAlignments": {
+        "input": "BenchMark-nalignments-Noc",
+        "output": "BenchMark-nalignments-Noc.json"
+    },
+    "NAAnalyzer": {
+        "input": "Json/NAlignment/base/na-c.json",
+        "output": "BenchMark-nalignments-Noc-NA.json"
     }
 }

@@ -1,0 +1,5 @@
+{
+    "folder": "BenchMark/ct/",
+    "output_folder": "Benchmark-results-gcSeq/",
+    "aligner": "gcStruc"
+}
