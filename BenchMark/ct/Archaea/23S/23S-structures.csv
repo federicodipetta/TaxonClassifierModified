@@ -1,5 +1,5 @@
 Num,FileName,NumberOfNucleotides,NumberOfWeakBonds,IsPseudoknotted,TimeToGenerateStructuralSequence[ns]
-1,"CRW_23S_A_E_1.ct",2925,852,Yes,1708800
-2,"CRW_23S_A_E_2.ct",2930,855,Yes,1530000
-3,"CRW_23S_A_E_3.ct",2930,855,Yes,1370800
-4,"CRW_23S_A_E_6.ct",3029,879,No,1496499
+1,"CRW_23S_A_E_1.ct",2925,852,Yes,1518400
+2,"CRW_23S_A_E_2.ct",2930,855,Yes,1667200
+3,"CRW_23S_A_E_3.ct",2930,855,Yes,1480500
+4,"CRW_23S_A_E_6.ct",3029,879,No,1580600

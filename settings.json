@@ -1,7 +1,11 @@
 {
     "automaticClasterMatrix": {
-        "dir1": "Order",
-        "dir2": "Benchmark-results-gc"
+        "dir1": "Benchmark-result-exp-len",
+        "dir2": "Esperimenti-Labels",
+        "type": "experiment_direct"
+    },
+    "diagramGenerator": {
+        "dir": "JSON-exp"
     },
     "jsonComparator": {
         "json1": "JsonResultsClass/Serna1.json",

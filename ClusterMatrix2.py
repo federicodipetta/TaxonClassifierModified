@@ -32,8 +32,7 @@ from sklearn.cluster import *
 from sklearn import metrics
 import argparse
 
-ID_Column_Molecules = "file"
-Taxon_Column_Molecules = "label "
+
 # Read the list of molecules
 def calculate_ClusterMatrix(file_moleculus, file_benchMarck):
     np.random.seed(42)
@@ -133,31 +132,27 @@ def calculate_ClusterMatrix_json(file_moleculus, file_benchMarck):
     json = { 
         "title" : "DATI PER "+ file_moleculus + " E " + file_benchMarck,
     }
-    print("file_moleculus", file_moleculus)
-    molecules = pd.read_csv(file_moleculus, sep=",", encoding='latin-1', keep_default_na=False)
-
+    molecules = pd.read_csv(file_moleculus, sep=";", encoding='latin-1')
 
     # Create dictionary Id -> Index
     index_of = dict() 
     for i in range(len(molecules)) :
-        index_of[molecules.loc[i].loc[ID_Column_Molecules].replace(".txt", "")] = i
+        index_of[molecules.loc[i].loc['Id']] = i
 
     # Create dictionary Id -> Organism 
-    # organism_of = dict()
-    # for i in range(len(molecules)) :
-    #     organism_of[molecules.loc[i].loc[ID_Column_Molecules]] = molecules.loc[i].loc['Organism'].strip()
+    organism_of = dict()
+    for i in range(len(molecules)) :
+        organism_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Organism'].strip()
 
     # Create dictionary Id -> Label 
     label_of = dict()
-    for i in range(len(molecules)):
-        taxon = molecules.loc[i].loc[Taxon_Column_Molecules]
-        if pd.isna(taxon):  # Controlla se il valore è NaN
-            print(f"Warning: Missing Taxon for Id {molecules.loc[i].loc[ID_Column_Molecules]}")
-            taxon = "Unknown"  # Sostituisci con un valore predefinito
-        label_of[molecules.loc[i].loc[ID_Column_Molecules]] = taxon
+    for i in range(len(molecules)) :
+        label_of[molecules.loc[i].loc['Id']] = molecules.loc[i].loc['Taxon'].strip()
+
     # Read the list of distances
-    print("file_moleculus", file_moleculus)
+    
     distances = pd.read_csv(file_benchMarck, sep=",")
+
     # Create Distance Matrix
     s= (len(molecules),len(molecules))
     distance_matrix= np.zeros(s)
@@ -180,59 +175,60 @@ def calculate_ClusterMatrix_json(file_moleculus, file_benchMarck):
     labels_true = list(label_of.values())
 
     # Execute clustering with single linkage and determines the predicted labels for each molecule
-
-    model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage ='single').fit(distance_matrix)
+    model = KMeans(n_clusters=n_clusters, init='k-means++', algorithm='elkan')
+    model.fit(distance_matrix)
+    #model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage ='single').fit(distance_matrix)
     labels_pred = model.fit_predict(distance_matrix)
-    json["single"] = {
+    json["auto"] = {
         "rand_score": metrics.rand_score(labels_true, labels_pred),
         "homogeneity_score": metrics.homogeneity_score(labels_true, labels_pred),
         "completeness_score": metrics.completeness_score(labels_true, labels_pred),
         "completeness_score": metrics.completeness_score(labels_true, labels_pred),
         "predicted": [
             {
-                "Id": molecules.loc[i].loc[ID_Column_Molecules],
-                #"Organism": molecules.loc[i].loc[Organism_Column_Molecules],
-                "Taxon": molecules.loc[i].loc[Taxon_Column_Molecules],
+                "Id": molecules.loc[i].loc['Id'],
+                "Organism": molecules.loc[i].loc['Organism'],
+                "Taxon": molecules.loc[i].loc['Taxon'],
                 "Predicted": str(labels_pred[i]),
                 "True": str(labels_true[i])
             } for i in range(len(molecules))
         ]
     }
     # Execute clustering with complete linkage and determines the predicted labels for each molecule
-    model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage ='average').fit(distance_matrix)
-    labels_pred = model.fit_predict(distance_matrix)
-    json["average"] = {
-        "rand_score": metrics.rand_score(labels_true, labels_pred),
-        "homogeneity_score": metrics.homogeneity_score(labels_true, labels_pred),
-        "completeness_score": metrics.completeness_score(labels_true, labels_pred),
-        "completeness_score": metrics.completeness_score(labels_true, labels_pred),
-        "predicted": [
-            {
-                "Id": molecules.loc[i].loc[ID_Column_Molecules],
-                #"Organism": molecules.loc[i].loc[Organism_Column_Molecules],
-                "Taxon": molecules.loc[i].loc[Taxon_Column_Molecules],
-                "Predicted": str(labels_pred[i]),
-                "True": str(labels_true[i])
-            } for i in range(len(molecules))
-        ]
-    }
-    # Execute clustering with average linkage and determines the predicted labels for each molecule
-    model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage ='complete').fit(distance_matrix)
-    labels_pred = model.fit_predict(distance_matrix)
-    json["complete"] = {
-        "rand_score": metrics.rand_score(labels_true, labels_pred),
-        "homogeneity_score": metrics.homogeneity_score(labels_true, labels_pred),
-        "completeness_score": metrics.completeness_score(labels_true, labels_pred),
-                "predicted": [
-            {
-                "Id": molecules.loc[i].loc[ID_Column_Molecules],
-                #"Organism": molecules.loc[i].loc[Organism_Column_Molecules],
-                "Taxon": molecules.loc[i].loc[Taxon_Column_Molecules],
-                "Predicted": str(labels_pred[i]),
-                "True": str(labels_true[i])
-            } for i in range(len(molecules))
-        ]
-    }
+    # model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage ='average').fit(distance_matrix)
+    # labels_pred = model.fit_predict(distance_matrix)
+    # json["average"] = {
+    #     "rand_score": metrics.rand_score(labels_true, labels_pred),
+    #     "homogeneity_score": metrics.homogeneity_score(labels_true, labels_pred),
+    #     "completeness_score": metrics.completeness_score(labels_true, labels_pred),
+    #     "completeness_score": metrics.completeness_score(labels_true, labels_pred),
+    #     "predicted": [
+    #         {
+    #             "Id": molecules.loc[i].loc['Id'],
+    #             "Organism": molecules.loc[i].loc['Organism'],
+    #             "Taxon": molecules.loc[i].loc['Taxon'],
+    #             "Predicted": str(labels_pred[i]),
+    #             "True": str(labels_true[i])
+    #         } for i in range(len(molecules))
+    #     ]
+    # }
+    # # Execute clustering with average linkage and determines the predicted labels for each molecule
+    # model = AgglomerativeClustering(n_clusters=n_clusters, metric='precomputed', linkage ='complete').fit(distance_matrix)
+    # labels_pred = model.fit_predict(distance_matrix)
+    # json["complete"] = {
+    #     "rand_score": metrics.rand_score(labels_true, labels_pred),
+    #     "homogeneity_score": metrics.homogeneity_score(labels_true, labels_pred),
+    #     "completeness_score": metrics.completeness_score(labels_true, labels_pred),
+    #             "predicted": [
+    #         {
+    #             "Id": molecules.loc[i].loc['Id'],
+    #             "Organism": molecules.loc[i].loc['Organism'],
+    #             "Taxon": molecules.loc[i].loc['Taxon'],
+    #             "Predicted": str(labels_pred[i]),
+    #             "True": str(labels_true[i])
+    #         } for i in range(len(molecules))
+    #     ]
+    # }
     return json
     #return generate_clustering_results(labels_true, n_clusters, "DATI PER "+ file_moleculus + " E " + file_benchMarck)
 
