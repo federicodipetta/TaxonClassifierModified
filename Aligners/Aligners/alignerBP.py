@@ -3,15 +3,15 @@ from parser.ctParser import parse_ct
 
 
 class AlignerBP : 
-    def __init__(self, file_name_1, file_name_2) -> None:
-        self.df = parse_ct(file_name_1)
-        self.df2 = parse_ct(file_name_2)
+    def __init__(self, df1, df2) -> None:
+        self.df = df1
+        self.df2 = df2
         self.weak_bonds_1 = self.__build_weak_bonds(self.df)
         self.weak_bonds_2 = self.__build_weak_bonds(self.df2)
-        self.distance_set = self.weak_bonds_1.symmetric_difference(self.weak_bonds_2)
+        self.distance_set = abs(len(self.weak_bonds_1) - len(self.weak_bonds_2))
 
     def get_distance(self) -> int:
-        return len(self.distance_set)
+        return self.distance_set
 
     def __build_weak_bonds(self, df) -> set[tuple[int, int]]:
         # Filtra le righe dove 'pair' è diverso da 0

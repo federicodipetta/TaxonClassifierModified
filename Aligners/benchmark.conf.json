@@ -1,5 +1,5 @@
 {
-    "folder": "BenchMark/ct/",
-    "output_folder": "Benchmark-results-gcSeq/",
-    "aligner": "gcStruc"
+    "folder": "Esperimenti/Confronto11/",
+    "output_folder": "Benchmark-result-exp-gcSeq/",
+    "aligner": "gcSeq"
 }

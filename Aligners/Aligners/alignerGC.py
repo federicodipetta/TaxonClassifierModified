@@ -1,10 +1,10 @@
 from parser.ctParser import parse_ct
 from pandas import DataFrame
 class AlignerGCStruct: 
-    def __init__(self, file_name_1, file_name_2) -> None:
-        self.df = parse_ct(file_name_1)
-        self.df2 = parse_ct(file_name_2)
-        self.distance = self.__get_gc_number(self.df) - self.__get_gc_number(self.df2)
+    def __init__(self, df1, df2) -> None:
+        self.df = df1
+        self.df2 = df2
+        self.distance = abs(self.__get_gc_number(self.df) - self.__get_gc_number(self.df2))
 
     def get_distance(self) -> int:
         return self.distance
@@ -20,10 +20,10 @@ class AlignerGCStruct:
         return len(gc_pairs) / (len(df['pair'] != 0) / 2)
     
 class AlignerGCSeq:
-    def __init__(self, file_name_1, file_name_2) -> None:
-        self.df = parse_ct(file_name_1)
-        self.df2 = parse_ct(file_name_2)
-        self.distance = self.__get_gc_number(self.df) - self.__get_gc_number(self.df2)
+    def __init__(self, df1, df2) -> None:
+        self.df = df1
+        self.df2 = df2
+        self.distance = abs(self.__get_gc_number(self.df) - self.__get_gc_number(self.df2))
     
     def get_distance(self) -> int:
         return self.distance
