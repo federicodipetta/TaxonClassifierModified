@@ -39,7 +39,6 @@ def get_benchmark_folder(folder : str) -> pd.DataFrame:
         return None
     folder = folder 
     print(os.path.abspath(folder))
-    folders = os.listdir(os.path.abspath(folder))
     
     list = pd.DataFrame(columns=["FileName1", "FileName2", "SERNADistance"])
     files = os.listdir(folder)
@@ -64,7 +63,9 @@ def write_results(folder : str, output_folder : str):
     paths = name.split("\\")
     name = paths[-1]
     print("folder: ", folder)
-    get_benchmark_folder(folder).to_csv(output_folder + "\\" + name + ".csv", index=False)
+    for exp_folder in os.listdir(folder):
+        print("Processing folder: ", exp_folder)
+        get_benchmark_folder(os.path.join(folder, exp_folder)).to_csv(output_folder + "\\" + exp_folder + ".csv", index=False)
 
 if __name__ == "__main__":
     settings = get_settings()

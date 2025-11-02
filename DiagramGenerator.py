@@ -44,8 +44,8 @@ print(f"Esperimenti trovati: {all_experiments}")
 # Create groups
 groups = []
 groups1 = [
-    #'Single-Rand', 'Single-Homogeneity', 'Single-Completeness',
-    #'Average-Rand', 'Average-Homogeneity', 'Average-Completeness',
+    'Single-Rand', 'Single-Homogeneity', 'Single-Completeness',
+    'Average-Rand', 'Average-Homogeneity', 'Average-Completeness',
     'Complete-Rand', 'Complete-Homogeneity', 'Complete-Completeness'
 ]
 
@@ -71,12 +71,12 @@ for i, dataset in enumerate(data):
             bench = exp_dict[experiment_key]
             print(f"  title: {bench['title']}")
             values = [
-                # bench['single']['rand_score'],
-                # bench['single']['homogeneity_score'],
-                # bench['single']['completeness_score'],
-                # bench['average']['rand_score'],
-                # bench['average']['homogeneity_score'],
-                # bench['average']['completeness_score'],
+                bench['single']['rand_score'],
+                bench['single']['homogeneity_score'],
+                bench['single']['completeness_score'],
+                bench['average']['rand_score'],
+                bench['average']['homogeneity_score'],
+                bench['average']['completeness_score'],
                 bench['complete']['rand_score'],
                 bench['complete']['homogeneity_score'],
                 bench['complete']['completeness_score']

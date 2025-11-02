@@ -33,7 +33,7 @@ from sklearn import metrics
 import argparse
 
 ID_Column_Molecules = "file"
-Taxon_Column_Molecules = "label "
+Taxon_Column_Molecules = "label"
 # Read the list of molecules
 def calculate_ClusterMatrix(file_moleculus, file_benchMarck):
     np.random.seed(42)
@@ -163,12 +163,14 @@ def calculate_ClusterMatrix_json(file_moleculus, file_benchMarck):
     distance_matrix= np.zeros(s)
     # Populate Distance Matrix
     for k in range(len(distances)) :
-        if distances.loc[k].loc['FileName1'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "") not in index_of:
+        if distances.loc[k].loc['FileName1'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "").replace(".txt", "") not in index_of:
+            print ("Warning: Missing Id in distance matrix", distances.loc[k].loc['FileName1'])
             continue
-        if distances.loc[k].loc['FileName2'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "") not in index_of:
+        if distances.loc[k].loc['FileName2'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "").replace(".txt", "") not in index_of:
+            print ("Warning: Missing Id in distance matrix", distances.loc[k].loc['FileName2'])
             continue
-        i = index_of[distances.loc[k].loc['FileName1'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "")]
-        j = index_of[distances.loc[k].loc['FileName2'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "")]
+        i = index_of[distances.loc[k].loc['FileName1'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "").replace(".txt", "")]
+        j = index_of[distances.loc[k].loc['FileName2'].replace("_16S", "").replace("_18S", "").replace(".ct","").replace(".bpseq.txt", "").replace(".txt", "")]
         value = distances.loc[k].loc['SERNADistance']
         distance_matrix[i][j] = value
         distance_matrix[j][i] = value
